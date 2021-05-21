@@ -1,4 +1,6 @@
 require("dotenv").config();
+const nodemailer = require("nodemailer");
+
 const Record = require("../models/record");
 
 exports.addRecord = (req, res) => {
@@ -24,7 +26,6 @@ exports.getRecord = (req, res) => {
     })
   })
 }
-
 
 exports.sendRecord=(req,res)=>{
 
