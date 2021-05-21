@@ -11,5 +11,10 @@ router.post(
  "/getRecord",
  getRecord
 );
+router.post(
+  "/sendRecord",
+  sendRecord
+ );
+
 
 module.exports = router;
